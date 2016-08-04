@@ -1,18 +1,18 @@
 [submodule "BUILD"]
 	path = BUILD
-	url = RCCohenLab@128.32.208.13:/volume2/share2/GROUP/MODELING/WRF-Chem/Auto-WRF-Chem/WRFAutomation.git
+	url = https://github.com/CohenBerkeleyLab/AutoWRFChem-Base.git
 [submodule "WPS"]
 	path = WPS
-	url = RCCohenLab@128.32.208.13:/volume2/share2/GROUP/MODELING/WRF-Chem/Auto-WRF-Chem/WPS.git
+	url = https://github.com/CohenBerkeleyLab/WPS.git
 [submodule "NEI"]
 	path = NEI
-	url = RCCohenLab@128.32.208.13:/volume2/share2/GROUP/MODELING/WRF-Chem/Auto-WRF-Chem/NEI.git
+	url = https://github.com/CohenBerkeleyLab/NEI.git
 [submodule "MEGAN"]
 	path = MEGAN
-	url = RCCohenLab@128.32.208.13:/volume2/share2/GROUP/MODELING/WRF-Chem/Auto-WRF-Chem/MEGAN.git
+	url = https://github.com/CohenBerkeleyLab/MEGAN.git
 [submodule "MOZBC"]
 	path = MOZBC
-	url = RCCohenLab@128.32.208.13:/volume2/share2/GROUP/MODELING/WRF-Chem/Auto-WRF-Chem/MOZBC.git
+	url = https://github.com/CohenBerkeleyLab/MOZBC.git
 [submodule "WRFV3"]
 	path = WRFV3
-	url = RCCohenLab@128.32.208.13:/volume2/share2/GROUP/MODELING/WRF-Chem/WRF-Chem-Versions/WRF-Chem-3.5.1-R2SMH.git
+	url = https://github.com/CohenBerkeleyLab/WRF-Chem-R2SMH.git
