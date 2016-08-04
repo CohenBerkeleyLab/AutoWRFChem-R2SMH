@@ -5,7 +5,3 @@ To do so, in THIS directory, run the commands
 
 git submodule init
 git submodule update
-
-Unfortunately you will need to enter the password for RCCohenLab for each
-submodule (and there are 6). I recommend copying it to your clipboard, unless
-you really enjoy typing that thing.
