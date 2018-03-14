@@ -23,19 +23,19 @@ accessed via the `autowrfchem` command. To see the available operations and flag
 `./autowrfchem -h` or `./autowrfchem --help`. In general, there are four stages to running
 automated WRF-Chem:
 
-    1. `./autowrfchem config` will run through WRF and WPS configuration, plus some additional
-        configuration for the automation, and then bring you into a text based menu to modify
-        your namelists.
-            * To modify namelists in the future, use `./autowrfchem config namelist`
-            * You may place template namelists in the BUILD/CONFIG/NAMELISTS folder and load them
-              from the main namelist config menu.
-            * Direct modifications to the namelists stored in BUILD/CONFIG will be lost due to how
-              AutoWRFChem stores temporary vs. permanent namelist changes.
-    2. `./autowrfchem compile` will compile WRF, WPS, emiss\_v04, convert\_emiss, MEGAN, and MOZBC
-        all with a single command. It will use environmental variables set up in the config step,
-        so you do not need to worry about setting those yourself.
-    3. `./autowrfchem prepinpt` will prepare all meteorology, emissions, and boundary condition data.
-    4. `./autowrfchem run` will execute WRF.
+1. `./autowrfchem config` will run through WRF and WPS configuration, plus some additional
+configuration for the automation, and then bring you into a text based menu to modify
+your namelists.
+* To modify namelists in the future, use `./autowrfchem config namelist`
+* You may place template namelists in the BUILD/CONFIG/NAMELISTS folder and load them
+from the main namelist config menu.
+* Direct modifications to the namelists stored in BUILD/CONFIG will be lost due to how
+AutoWRFChem stores temporary vs. permanent namelist changes.
+2. `./autowrfchem compile` will compile WRF, WPS, emiss\_v04, convert\_emiss, MEGAN, and MOZBC
+all with a single command. It will use environmental variables set up in the config step,
+so you do not need to worry about setting those yourself.
+3. `./autowrfchem prepinpt` will prepare all meteorology, emissions, and boundary condition data.
+4. `./autowrfchem run` will execute WRF.
 
 For more information, check out the [AutoWRFChem-Base wiki](https://github.com/CohenBerkeleyLab/AutoWRFChem-Base/wiki). 
 
@@ -45,11 +45,11 @@ There are two new namelist options of note: scale\_nei\_emiss and scale\_closest
 chemistry namelist. These are present in the template namelist. These control NEI emissions scaling
 to the appropriate year.
 
-    * scale\_nei\_emiss is a boolean (`.true.` or `.false.`) that turns on or off automatic scaling of
-      NEI emissions to the model year, based on total US emissions released annually by the EPA.
-    * scale\_closest\_year is also a boolean that controls how the emissions scaling should behave if
-      scaling factors are not defined for the model year. If `.false.`, then `convert_emiss` will fail
-      with an error. If `.true.`, then `convert_emiss` will use the closest available year.
+* scale\_nei\_emiss is a boolean (`.true.` or `.false.`) that turns on or off automatic scaling of
+NEI emissions to the model year, based on total US emissions released annually by the EPA.
+* scale\_closest\_year is also a boolean that controls how the emissions scaling should behave if
+scaling factors are not defined for the model year. If `.false.`, then `convert_emiss` will fail
+with an error. If `.true.`, then `convert_emiss` will use the closest available year.
 
 ## Important notes to maintainers and modders
 
