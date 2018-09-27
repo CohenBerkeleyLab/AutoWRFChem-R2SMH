@@ -1,18 +1,18 @@
 [submodule "BUILD"]
 	path = BUILD
-	url = https://github.com/CohenBerkeleyLab/AutoWRFChem-Base.git
+	url = ../AutoWRFChem-Base.git
 [submodule "WPS"]
 	path = WPS
-	url = https://github.com/CohenBerkeleyLab/WPS.git
+	url = ../WPS.git
 [submodule "NEI"]
 	path = NEI
-	url = https://github.com/CohenBerkeleyLab/NEI.git
+	url = ../NEI.git
 [submodule "MEGAN"]
 	path = MEGAN
-	url = https://github.com/CohenBerkeleyLab/MEGAN.git
+	url = ../MEGAN.git
 [submodule "MOZBC"]
 	path = MOZBC
-	url = https://github.com/CohenBerkeleyLab/MOZBC.git
+	url = ../MOZBC.git
 [submodule "WRFV3"]
 	path = WRFV3
-	url = https://github.com/CohenBerkeleyLab/WRF-Chem-R2SMH.git
+	url = ../WRF-Chem-R2SMH.git
